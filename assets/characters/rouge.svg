@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="rougeShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.55"/>
+    </filter>
+    <linearGradient id="rougeFur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c2185b"/>
+      <stop offset="100%" stop-color="#880e4f"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Agent Rouge the Bat: Tactical operator, confident, on PTO -->
+  <g filter="url(#rougeShadow)">
+    <!-- Body: athletic, tactical gear -->
+    <ellipse cx="200" cy="350" rx="52" ry="78" fill="url(#rougeFur)"/>
+    <!-- Head -->
+    <circle cx="200" cy="175" r="50" fill="#c2185b"/>
+    <!-- Ears: large bat ears -->
+    <ellipse cx="170" cy="110" rx="18" ry="35" fill="#880e4f" stroke="#550428" stroke-width="1"/>
+    <ellipse cx="230" cy="110" rx="18" ry="35" fill="#880e4f" stroke="#550428" stroke-width="1"/>
+    <!-- Inner ear -->
+    <ellipse cx="170" cy="115" rx="10" ry="22" fill="#e91e63" opacity="0.7"/>
+    <ellipse cx="230" cy="115" rx="10" ry="22" fill="#e91e63" opacity="0.7"/>
+    <!-- Eyes: sharp, confident red-gold -->
+    <circle cx="182" cy="160" r="8" fill="#ffc107"/>
+    <circle cx="218" cy="160" r="8" fill="#ffc107"/>
+    <!-- Pupils -->
+    <circle cx="182" cy="162" r="3" fill="#000"/>
+    <circle cx="218" cy="162" r="3" fill="#000"/>
+    <!-- Muzzle: strong, ready -->
+    <ellipse cx="200" cy="200" rx="24" ry="22" fill="#e91e63"/>
+    <!-- Mouth: confident smile -->
+    <path d="M 188 208 Q 200 212 212 208" stroke="#880e4f" stroke-width="2" fill="none"/>
+    <!-- Gem/jewel accessory -->
+    <circle cx="200" cy="90" r="6" fill="#ffc107" stroke="#ffb300" stroke-width="1"/>
+    <!-- Wings (hint of tactical gear) -->
+    <path d="M 148 300 L 130 340" stroke="#880e4f" stroke-width="4" opacity="0.6" stroke-linecap="round"/>
+    <path d="M 252 300 L 270 340" stroke="#880e4f" stroke-width="4" opacity="0.6" stroke-linecap="round"/>
+  </g>
+</svg>

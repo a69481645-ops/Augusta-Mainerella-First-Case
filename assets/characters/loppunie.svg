@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="loppunieShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.5"/>
+    </filter>
+    <linearGradient id="loppunieFur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9691d"/>
+      <stop offset="100%" stop-color="#8b4513"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Loppunie: Rescued captive, regaining autonomy, hopeful -->
+  <g filter="url(#loppunieShadow)">
+    <!-- Body: recovering, still cautious -->
+    <ellipse cx="200" cy="350" rx="46" ry="72" fill="url(#loppunieFur)"/>
+    <!-- Head -->
+    <circle cx="200" cy="180" r="46" fill="#c9691d"/>
+    <!-- Ears: slightly bent, recovering -->
+    <polygon points="172,118 158,65 180,108" fill="#8b4513" stroke="#5c2e0a" stroke-width="1"/>
+    <polygon points="228,118 242,65 220,108" fill="#8b4513" stroke="#5c2e0a" stroke-width="1"/>
+    <!-- Inner ear -->
+    <polygon points="172,123 162,85 178,113" fill="#d4a574"/>
+    <polygon points="228,123 238,85 222,113" fill="#d4a574"/>
+    <!-- Eyes: gentle, hopeful green -->
+    <circle cx="185" cy="165" r="6" fill="#90ee90" opacity="0.85"/>
+    <circle cx="215" cy="165" r="6" fill="#90ee90" opacity="0.85"/>
+    <!-- Pupils -->
+    <circle cx="185" cy="167" r="2.5" fill="#000"/>
+    <circle cx="215" cy="167" r="2.5" fill="#000"/>
+    <!-- Muzzle: gentle, kind -->
+    <ellipse cx="200" cy="200" rx="20" ry="18" fill="#d4a574"/>
+    <!-- Mouth: soft smile, hopeful -->
+    <path d="M 190 205 Q 200 208 210 205" stroke="#8b4513" stroke-width="1.5" fill="none"/>
+    <!-- Whiskers: soft, regaining confidence -->
+    <line x1="162" y1="190" x2="128" y2="185" stroke="#5c2e0a" stroke-width="1" opacity="0.6"/>
+    <line x1="162" y1="210" x2="128" y2="215" stroke="#5c2e0a" stroke-width="1" opacity="0.6"/>
+    <line x1="238" y1="190" x2="272" y2="185" stroke="#5c2e0a" stroke-width="1" opacity="0.6"/>
+    <line x1="238" y1="210" x2="272" y2="215" stroke="#5c2e0a" stroke-width="1" opacity="0.6"/>
+    <!-- Tail: curled, safe feeling -->
+    <path d="M 158 380 Q 135 355 132 315" stroke="#8b4513" stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="cleoShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.55"/>
+    </filter>
+    <linearGradient id="cleoFur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4a344"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Cleo Habessha: Abyssinian cat, glamorous, commanding presence -->
+  <g filter="url(#cleoShadow)">
+    <!-- Body: elegant, stage-ready -->
+    <ellipse cx="200" cy="360" rx="48" ry="78" fill="url(#cleoFur)"/>
+    <!-- Head -->
+    <circle cx="200" cy="175" r="50" fill="#d4a344"/>
+    <!-- Ears: large, pointed, alert -->
+    <polygon points="168,110 150,50 175,105" fill="#b8860b" stroke="#8b6914" stroke-width="1"/>
+    <polygon points="232,110 250,50 225,105" fill="#b8860b" stroke="#8b6914" stroke-width="1"/>
+    <!-- Inner ear -->
+    <polygon points="168,115 155,75 172,108" fill="#e8c547"/>
+    <polygon points="232,115 245,75 228,108" fill="#e8c547"/>
+    <!-- Eyes: sharp, amber, commanding -->
+    <circle cx="182" cy="160" r="8" fill="#ffd700"/>
+    <circle cx="218" cy="160" r="8" fill="#ffd700"/>
+    <!-- Pupils -->
+    <ellipse cx="182" cy="162" rx="2" ry="4" fill="#000"/>
+    <ellipse cx="218" cy="162" rx="2" ry="4" fill="#000"/>
+    <!-- Muzzle: confident smile -->
+    <ellipse cx="200" cy="200" rx="24" ry="22" fill="#e8c547"/>
+    <!-- Mouth: slight smirk -->
+    <path d="M 190 205 Q 200 210 210 205" stroke="#8b6914" stroke-width="2" fill="none"/>
+    <!-- Whiskers: proud, elegant -->
+    <line x1="158" y1="195" x2="115" y2="190" stroke="#8b6914" stroke-width="1.5" opacity="0.8"/>
+    <line x1="158" y1="210" x2="115" y2="215" stroke="#8b6914" stroke-width="1.5" opacity="0.8"/>
+    <line x1="242" y1="195" x2="285" y2="190" stroke="#8b6914" stroke-width="1.5" opacity="0.8"/>
+    <line x1="242" y1="210" x2="285" y2="215" stroke="#8b6914" stroke-width="1.5" opacity="0.8"/>
+    <!-- Necklace/jewelry: status symbol -->
+    <circle cx="200" cy="310" r="5" fill="#ffd700" stroke="#8b6914" stroke-width="1"/>
+    <path d="M 195 310 Q 200 320 205 310" stroke="#ffd700" stroke-width="2" fill="none" opacity="0.7"/>
+  </g>
+</svg>

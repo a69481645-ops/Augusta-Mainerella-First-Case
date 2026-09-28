@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="sonicShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.5"/>
+    </filter>
+    <linearGradient id="sonicColor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#003d7a"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sonic the Hedgehog: Fast, confident, protective of Madonna -->
+  <g filter="url(#sonicShadow)">
+    <!-- Body: sleek, muscular -->
+    <ellipse cx="200" cy="360" rx="48" ry="76" fill="url(#sonicColor)"/>
+    <!-- Head -->
+    <circle cx="200" cy="175" r="50" fill="#0066cc"/>
+    <!-- Spikes: iconic quills -->
+    <polygon points="200,100 185,135 195,130" fill="#0066cc" stroke="#003d7a" stroke-width="1"/>
+    <polygon points="215,105 225,140 220,130" fill="#0066cc" stroke="#003d7a" stroke-width="1"/>
+    <polygon points="190,95 178,118 188,112" fill="#0066cc" stroke="#003d7a" stroke-width="1"/>
+    <polygon points="210,92 222,118 212,110" fill="#0066cc" stroke="#003d7a" stroke-width="1"/>
+    <!-- Eyes: confident emerald -->
+    <circle cx="180" cy="160" r="9" fill="#00ff00"/>
+    <circle cx="220" cy="160" r="9" fill="#00ff00"/>
+    <!-- Pupils -->
+    <circle cx="180" cy="162" r="3" fill="#000"/>
+    <circle cx="220" cy="162" r="3" fill="#000"/>
+    <!-- Muzzle: light blue -->
+    <ellipse cx="200" cy="200" rx="26" ry="24" fill="#66ddff"/>
+    <!-- Mouth: confident smirk -->
+    <path d="M 185 210 Q 200 215 215 210" stroke="#0066cc" stroke-width="2" fill="none"/>
+    <!-- Chest emblem -->
+    <circle cx="200" cy="340" r="14" fill="#ffcc00" stroke="#ff9900" stroke-width="2"/>
+    <!-- Sneakers: iconic red -->
+    <rect x="175" y="420" width="18" height="25" fill="#cc0000" rx="3"/>
+    <rect x="207" y="420" width="18" height="25" fill="#cc0000" rx="3"/>
+  </g>
+</svg>

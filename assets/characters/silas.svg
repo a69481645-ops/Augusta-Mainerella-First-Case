@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="silasShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  
+  <!-- Silas Flint: Enforcer, vault guardian, armed and hostile -->
+  <g filter="url(#silasShadow)">
+    <!-- Body: bulky, intimidating, tactical gear -->
+    <ellipse cx="200" cy="360" rx="56" ry="82" fill="#1a1a1a"/>
+    <!-- Vest detail -->
+    <rect x="165" y="290" width="70" height="100" fill="#2a2a2a" opacity="0.8" stroke="#444" stroke-width="1"/>
+    <!-- Ammo/gear -->
+    <rect x="175" y="310" width="8" height="60" fill="#666" opacity="0.7"/>
+    <rect x="217" y="310" width="8" height="60" fill="#666" opacity="0.7"/>
+    <!-- Head -->
+    <circle cx="200" cy="170" r="52" fill="#3a3a3a"/>
+    <!-- Scarred face -->
+    <line x1="165" y1="150" x2="180" y2="170" stroke="#1a1a1a" stroke-width="2" opacity="0.5"/>
+    <!-- Eyes: hard, merciless -->
+    <circle cx="178" cy="155" r="8" fill="#4a4a4a" opacity="0.9"/>
+    <circle cx="222" cy="155" r="8" fill="#4a4a4a" opacity="0.9"/>
+    <!-- Pupils -->
+    <circle cx="178" cy="157" r="3" fill="#000"/>
+    <circle cx="222" cy="157" r="3" fill="#000"/>
+    <!-- Mouth: hard line, cruel -->
+    <line x1="185" y1="205" x2="215" y2="205" stroke="#1a1a1a" stroke-width="2"/>
+    <!-- Gun holster visible -->
+    <path d="M 235 330 L 245 350" stroke="#333" stroke-width="4" opacity="0.7" stroke-linecap="round"/>
+  </g>
+</svg>

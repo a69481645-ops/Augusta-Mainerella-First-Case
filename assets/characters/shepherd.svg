@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="shepherdShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- Officer Shepherd: Cop, dismissive of the case, unhelpful -->
+  <g filter="url(#shepherdShadow)">
+    <!-- Body: police uniform -->
+    <ellipse cx="200" cy="360" rx="52" ry="78" fill="#001a4d"/>
+    <!-- Badge/vest -->
+    <rect x="170" y="310" width="60" height="90" fill="#003d7a" stroke="#ffcc00" stroke-width="2"/>
+    <!-- Badge detail -->
+    <circle cx="200" cy="330" r="10" fill="#ffcc00" stroke="#333" stroke-width="1"/>
+    <!-- Head -->
+    <circle cx="200" cy="175" r="50" fill="#5a6a7a"/>
+    <!-- Uniform cap -->
+    <path d="M 150 140 Q 150 110 200 100 Q 250 110 250 140 L 245 150 L 155 150" fill="#001a4d" stroke="#003d7a" stroke-width="1"/>
+    <!-- Eyes: tired, apathetic -->
+    <circle cx="180" cy="165" r="7" fill="#4a5a6a"/>
+    <circle cx="220" cy="165" r="7" fill="#4a5a6a"/>
+    <!-- Pupils -->
+    <circle cx="180" cy="167" r="2" fill="#000"/>
+    <circle cx="220" cy="167" r="2" fill="#000"/>
+    <!-- Mouth: dismissive frown -->
+    <path d="M 185 205 Q 200 200 215 205" stroke="#333" stroke-width="1.5" fill="none"/>
+  </g>
+</svg>

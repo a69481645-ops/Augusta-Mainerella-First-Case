@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="vanceShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.65"/>
+    </filter>
+    <linearGradient id="vanceGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a3728"/>
+      <stop offset="100%" stop-color="#1a0f08"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Baron Vance: Sociopath cartel leader, permanent SMIRK, chilling detachment -->
+  <g filter="url(#vanceShadow)">
+    <!-- Body: expensive suit, intimidating -->
+    <ellipse cx="200" cy="350" rx="54" ry="80" fill="url(#vanceGradient)"/>
+    <!-- Torso details: crisp shirt -->
+    <rect x="170" y="300" width="60" height="80" fill="#1a1a1a" rx="5"/>
+    <!-- Head -->
+    <circle cx="200" cy="175" r="52" fill="#5a4a38"/>
+    <!-- Hair: slicked back, predatory -->
+    <path d="M 148 150 Q 140 90 200 70 Q 260 90 252 150" fill="#2a1a0a" stroke="#1a0a00" stroke-width="1"/>
+    <!-- Eyes: cold, calculating, ice blue -->
+    <circle cx="178" cy="160" r="9" fill="#4a9eff" opacity="0.9"/>
+    <circle cx="222" cy="160" r="9" fill="#4a9eff" opacity="0.9"/>
+    <!-- Pupils: hollow -->
+    <circle cx="178" cy="163" r="4" fill="#000"/>
+    <circle cx="222" cy="163" r="4" fill="#000"/>
+    <!-- PERMANENT SMIRK: The defining feature -->
+    <ellipse cx="200" cy="210" rx="28" ry="26" fill="#6a5a48"/>
+    <!-- Mouth: LOCKED SMIRK (not neutral, not frown - unmovable arrogance) -->
+    <path d="M 180 215 Q 195 225 215 215" stroke="#2a1a0a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Corner of mouth: smirk emphasis (one side higher) -->
+    <line x1="215" y1="212" x2="225" y2="208" stroke="#2a1a0a" stroke-width="2" stroke-linecap="round"/>
+    <!-- Whiskers: sharp, predatory -->
+    <line x1="148" y1="205" x2="110" y2="200" stroke="#2a1a0a" stroke-width="1.5" opacity="0.8"/>
+    <line x1="148" y1="225" x2="110" y2="230" stroke="#2a1a0a" stroke-width="1.5" opacity="0.8"/>
+    <line x1="252" y1="205" x2="290" y2="200" stroke="#2a1a0a" stroke-width="1.5" opacity="0.8"/>
+    <line x1="252" y1="225" x2="290" y2="230" stroke="#2a1a0a" stroke-width="1.5" opacity="0.8"/>
+    <!-- Jeweled ring: arrogant wealth -->
+    <circle cx="240" cy="445" r="8" fill="#ff0000" stroke="#ffff00" stroke-width="2" opacity="0.9"/>
+  </g>
+</svg>

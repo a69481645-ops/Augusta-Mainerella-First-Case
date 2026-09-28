@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="madonnaShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.55"/>
+    </filter>
+    <linearGradient id="madonnaFur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8800"/>
+      <stop offset="100%" stop-color="#cc5500"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Madonna the Hedgehog: World-famous jazz singer, Sonic's girlfriend, confident -->
+  <g filter="url(#madonnaShadow)">
+    <!-- Body: elegant, stage presence -->
+    <ellipse cx="200" cy="360" rx="46" ry="75" fill="url(#madonnaFur)"/>
+    <!-- Head -->
+    <circle cx="200" cy="175" r="48" fill="#ff8800"/>
+    <!-- Spikes/quills: sleek, feminine style -->
+    <polygon points="200,105 190,135 198,128" fill="#ff8800" stroke="#cc5500" stroke-width="1"/>
+    <polygon points="215,108 227,138 218,130" fill="#ff8800" stroke="#cc5500" stroke-width="1"/>
+    <polygon points="185,98 175,120 185,115" fill="#ff8800" stroke="#cc5500" stroke-width="1"/>
+    <!-- Eyes: warm, expressive amber -->
+    <circle cx="180" cy="160" r="8" fill="#ffdd00"/>
+    <circle cx="220" cy="160" r="8" fill="#ffdd00"/>
+    <!-- Pupils -->
+    <circle cx="180" cy="162" r="3" fill="#000"/>
+    <circle cx="220" cy="162" r="3" fill="#000"/>
+    <!-- Muzzle: peach tone, warm -->
+    <ellipse cx="200" cy="200" rx="24" ry="22" fill="#ffcc99"/>
+    <!-- Mouth: warm smile, singer's expression -->
+    <path d="M 188 208 Q 200 213 212 208" stroke="#cc5500" stroke-width="2" fill="none"/>
+    <!-- Microphone earring/accessory -->
+    <circle cx="235" cy="180" r="5" fill="#ffdd00" stroke="#cc5500" stroke-width="1"/>
+    <path d="M 238 185 L 245 215" stroke="#999" stroke-width="2"/>
+    <!-- Stage presence aura -->
+    <ellipse cx="200" cy="360" rx="50" ry="76" fill="none" stroke="#ff8800" stroke-width="2" opacity="0.3"/>
+  </g>
+</svg>

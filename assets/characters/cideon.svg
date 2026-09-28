@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="ciId" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.5"/>
+    </filter>
+    <linearGradient id="ciColor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0033"/>
+      <stop offset="100%" stop-color="#0d001a"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Cideon Minx: Hacker, technician, focused and intense -->
+  <g filter="url(#ciId)">
+    <!-- Body: tech-savvy, laptop user -->
+    <ellipse cx="200" cy="350" rx="50" ry="76" fill="url(#ciColor)"/>
+    <!-- Head -->
+    <circle cx="200" cy="180" r="48" fill="#1a1a2a"/>
+    <!-- Hair: dark, streaked with purple -->
+    <path d="M 152 155 Q 140 100 160 80 Q 200 60 240 80 Q 260 100 248 155" fill="#0d001a"/>
+    <line x1="175" y1="95" x2="175" y2="145" stroke="#7d3cff" stroke-width="2" opacity="0.6"/>
+    <line x1="225" y1="95" x2="225" y2="145" stroke="#7d3cff" stroke-width="2" opacity="0.6"/>
+    <!-- Eyes: intense, purple-hued -->
+    <circle cx="182" cy="165" r="7" fill="#8d5cff"/>
+    <circle cx="218" cy="165" r="7" fill="#8d5cff"/>
+    <!-- Pupils -->
+    <circle cx="182" cy="167" r="3" fill="#000"/>
+    <circle cx="218" cy="167" r="3" fill="#000"/>
+    <!-- Mouth: focused, determined -->
+    <path d="M 188 205 Q 200 208 212 205" stroke="#555" stroke-width="1.5" fill="none"/>
+    <!-- Earpiece/headset -->
+    <circle cx="148" cy="175" r="8" fill="#7d3cff" opacity="0.7"/>
+    <path d="M 156 175 Q 170 173 180 170" stroke="#7d3cff" stroke-width="2" fill="none"/>
+    <!-- Keyboard hands gesture -->
+    <rect x="170" y="405" width="12" height="30" fill="#1a1a2a" rx="3"/>
+    <rect x="218" y="405" width="12" height="30" fill="#1a1a2a" rx="3"/>
+  </g>
+</svg>

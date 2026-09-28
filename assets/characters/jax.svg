@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="jaxShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+  
+  <!-- Jax: Secondary enforcer, intimidating presence -->
+  <g filter="url(#jaxShadow)">
+    <!-- Body: imposing, muscular -->
+    <ellipse cx="200" cy="360" rx="55" ry="79" fill="#1a0a0a"/>
+    <!-- Leather jacket -->
+    <path d="M 165 290 L 170 420 L 230 420 L 235 290" fill="#000" stroke="#333" stroke-width="1"/>
+    <!-- Head -->
+    <circle cx="200" cy="175" r="50" fill="#2a1a1a"/>
+    <!-- Eyes: predatory, cruel -->
+    <circle cx="180" cy="160" r="8" fill="#666"/>
+    <circle cx="220" cy="160" r="8" fill="#666"/>
+    <!-- Pupils -->
+    <ellipse cx="180" cy="162" rx="2" ry="4" fill="#000"/>
+    <ellipse cx="220" cy="162" rx="2" ry="4" fill="#000"/>
+    <!-- Mouth: cruel sneer -->
+    <path d="M 185 208 Q 200 212 215 208" stroke="#333" stroke-width="2" fill="none"/>
+    <!-- Tattoo mark -->
+    <line x1="235" y1="340" x2="250" y2="360" stroke="#ff0000" stroke-width="2" opacity="0.7"/>
+  </g>
+</svg>

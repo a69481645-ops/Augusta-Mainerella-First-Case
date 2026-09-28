@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="viktorShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  
+  <!-- Viktor: Ruthless henchman, tactical, dangerous -->
+  <g filter="url(#viktorShadow)">
+    <!-- Body: muscular, combat-ready -->
+    <ellipse cx="200" cy="360" rx="54" ry="80" fill="#0d0d0d"/>
+    <!-- Combat fatigues -->
+    <rect x="165" y="300" width="70" height="100" fill="#1a1a1a" opacity="0.9" stroke="#333" stroke-width="1"/>
+    <!-- Head -->
+    <circle cx="200" cy="175" r="50" fill="#2a2a2a"/>
+    <!-- Shaved head detail -->
+    <path d="M 150 155 Q 150 120 200 110 Q 250 120 250 155" fill="#1a1a1a" opacity="0.5"/>
+    <!-- Eyes: cold, military -->
+    <circle cx="180" cy="160" r="8" fill="#555" opacity="0.8"/>
+    <circle cx="220" cy="160" r="8" fill="#555" opacity="0.8"/>
+    <!-- Pupils -->
+    <circle cx="180" cy="162" r="3" fill="#000"/>
+    <circle cx="220" cy="162" r="3" fill="#000"/>
+    <!-- Mouth: grim, business-like -->
+    <line x1="185" y1="205" x2="215" y2="205" stroke="#333" stroke-width="1.5"/>
+    <!-- Tactical gear: weapon ready -->
+    <path d="M 240 320 L 255 340" stroke="#555" stroke-width="4" opacity="0.8" stroke-linecap="round"/>
+  </g>
+</svg>
