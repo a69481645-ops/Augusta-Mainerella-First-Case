@@ -1,0 +1,62 @@
+{
+  "name": "augusta-mainerella-first-case",
+  "version": "1.0.0",
+  "description": "Augusta Mainerella: First Case — a cyber-noir visual novel desktop app",
+  "main": "main.js",
+  "homepage": "./",
+  "author": "a69481645-ops",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux"
+  },
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.augustamainerella.firstcase",
+    "productName": "Augusta Mainerella: First Case",
+    "files": [
+      "index.html",
+      "style.css",
+      "app.js",
+      "main.js",
+      "assets/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "assets/icon.icns",
+      "category": "public.app-category.games"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "assets/icon.png",
+      "category": "Game"
+    }
+  }
+}
