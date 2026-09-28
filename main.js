@@ -21,8 +21,8 @@ const chapters = [
     title: "Chapter 2: Firewall Bleed",
     background: "linear-gradient(180deg, rgba(12,10,14,0.5), rgba(15,10,26,0.82)), url('assets/chapters/city-night.svg') center center / cover no-repeat",
     characters: {
-      left: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true },
-      center: { name: "Cideon Minx", image: "assets/characters/cideon.svg", visible: true },
+      left: { name: "Cideon Minx", image: "assets/characters/cideon.svg", visible: true },
+      center: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true },
       right: { name: "Officer Shepherd", image: "assets/characters/shepherd.svg", visible: true }
     },
     dialogue: [
@@ -37,9 +37,9 @@ const chapters = [
     title: "Chapter 3: Spyjewel",
     background: "linear-gradient(180deg, rgba(6,9,17,0.52), rgba(12,16,28,0.84)), url('assets/chapters/loft-interior.svg') center center / cover no-repeat",
     characters: {
-      left: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true },
+      left: { name: "Agent Rouge", image: "assets/characters/rouge.svg", visible: true },
       center: { name: "Coptcat", image: "assets/characters/coptcat.svg", visible: true },
-      right: { name: "Agent Rouge", image: "assets/characters/rouge.svg", visible: true }
+      right: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true }
     },
     dialogue: [
       { speaker: "Augusta Mainerella", text: "The only person who ever made this kind of thing feel like a rule-book was my ancestor. We have a codeword. Spyjewel." },
@@ -67,9 +67,9 @@ const chapters = [
     title: "Chapter 5: The Line",
     background: "linear-gradient(180deg, rgba(13,10,17,0.52), rgba(18,13,24,0.84)), url('assets/chapters/velvet-onyx.svg') center center / cover no-repeat",
     characters: {
-      left: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true },
+      left: { name: "Sonic", image: "assets/characters/sonic.svg", visible: true },
       center: { name: "Cleo Habessha", image: "assets/characters/cleo.svg", visible: true },
-      right: { name: "Sonic", image: "assets/characters/sonic.svg", visible: true }
+      right: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true }
     },
     dialogue: [
       { speaker: "Cleo Habessha", text: "I don't traffic human beings. I sell nights, not flesh. Forced human slavery is a line I will not cross, and Vance made his mistake when he thought my curtain call could be bought." },
@@ -82,8 +82,8 @@ const chapters = [
     title: "Chapter 6: Blackout",
     background: "linear-gradient(180deg, rgba(12,14,18,0.52), rgba(15,20,26,0.85)), url('assets/chapters/alley-rain.svg') center center / cover no-repeat",
     characters: {
-      left: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true },
-      center: { name: "Sabrina Shadowcoat", image: "assets/characters/sabrina.svg", visible: true },
+      left: { name: "Sabrina Shadowcoat", image: "assets/characters/sabrina.svg", visible: true },
+      center: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true },
       right: { name: "Sonic", image: "assets/characters/sonic.svg", visible: true }
     },
     dialogue: [
@@ -97,9 +97,9 @@ const chapters = [
     title: "Chapter 7: Vault Breach",
     background: "linear-gradient(180deg, rgba(10,13,18,0.5), rgba(14,19,28,0.76)), url('assets/chapters/vault.svg') center center / cover no-repeat",
     characters: {
-      left: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true },
+      left: { name: "Silas Flint", image: "assets/characters/silas.svg", visible: true },
       center: { name: "Sonic", image: "assets/characters/sonic.svg", visible: true },
-      right: { name: "Silas Flint", image: "assets/characters/silas.svg", visible: true }
+      right: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true }
     },
     dialogue: [
       { speaker: "Silas Flint", text: "This vault belongs to the family. You are not walking out of it. We have guns and an empty conscience." },
@@ -113,9 +113,9 @@ const chapters = [
     title: "Chapter 8: Captive",
     background: "linear-gradient(180deg, rgba(7,8,12,0.56), rgba(15,12,18,0.8)), url('assets/chapters/dungeon.svg') center center / cover no-repeat",
     characters: {
-      left: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true },
-      center: { name: "Loppunie", image: "assets/characters/loppunie.svg", visible: true },
-      right: { name: "Baron Vance", image: "assets/characters/vance.svg", visible: true }
+      left: { name: "Loppunie", image: "assets/characters/loppunie.svg", visible: true },
+      center: { name: "Baron Vance", image: "assets/characters/vance.svg", visible: true },
+      right: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true }
     },
     dialogue: [
       { speaker: "Loppunie", text: "Augusta... I kept thinking they would never make it. I could hear the city through the walls, but not my own heartbeat." },
@@ -143,9 +143,9 @@ const chapters = [
     title: "Chapter 10: Collapse",
     background: "linear-gradient(180deg, rgba(10,9,15,0.54), rgba(18,10,18,0.8)), url('assets/chapters/mansion.svg') center center / cover no-repeat",
     characters: {
-      left: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true },
-      center: { name: "Agent Rouge", image: "assets/characters/rouge.svg", visible: true },
-      right: { name: "Cleo Habessha", image: "assets/characters/cleo.svg", visible: true }
+      left: { name: "Agent Rouge", image: "assets/characters/rouge.svg", visible: true },
+      center: { name: "Cleo Habessha", image: "assets/characters/cleo.svg", visible: true },
+      right: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true }
     },
     dialogue: [
       { speaker: "Agent Rouge", text: "Task force is clearing the mansion. The operation is falling apart in real time. We have the evidence, the witness, and the exit window." },
@@ -158,9 +158,9 @@ const chapters = [
     title: "Chapter 11: Restored",
     background: "linear-gradient(180deg, rgba(8,9,18,0.54), rgba(10,9,17,0.84)), url('assets/chapters/white-backdrop.svg') center center / cover no-repeat",
     characters: {
-      left: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true },
-      center: { name: "Loppunie", image: "assets/characters/loppunie.svg", visible: true },
-      right: { name: "Madonna", image: "assets/characters/madonna.svg", visible: true }
+      left: { name: "Loppunie", image: "assets/characters/loppunie.svg", visible: true },
+      center: { name: "Madonna", image: "assets/characters/madonna.svg", visible: true },
+      right: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true }
     },
     dialogue: [
       { speaker: "Loppunie", text: "I can feel my limbs again. The weight is gone. There is no chain left inside me but the one that tells me where I belong, and I know where that is now." },
@@ -173,8 +173,8 @@ const chapters = [
     title: "Chapter 12: Record",
     background: "linear-gradient(180deg, rgba(7,9,14,0.58), rgba(15,20,28,0.88)), url('assets/chapters/night-city.svg') center center / cover no-repeat",
     characters: {
-      left: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true },
-      center: { name: "Coptcat", image: "assets/characters/coptcat.svg", visible: true },
+      left: { name: "Coptcat", image: "assets/characters/coptcat.svg", visible: true },
+      center: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true },
       right: { name: "Cideon Minx", image: "assets/characters/cideon.svg", visible: true }
     },
     dialogue: [
@@ -188,9 +188,9 @@ const chapters = [
     title: "Epilogue: Personal Agency",
     background: "linear-gradient(180deg, rgba(8,9,17,0.56), rgba(16,10,20,0.86)), url('assets/chapters/white-backdrop.svg') center center / cover no-repeat",
     characters: {
-      left: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true },
-      center: { name: "Loppunie", image: "assets/characters/loppunie.svg", visible: true },
-      right: { name: "Coptcat", image: "assets/characters/coptcat.svg", visible: true }
+      left: { name: "Loppunie", image: "assets/characters/loppunie.svg", visible: true },
+      center: { name: "Coptcat", image: "assets/characters/coptcat.svg", visible: true },
+      right: { name: "Augusta Mainerella", image: "assets/characters/augusta.svg", visible: true }
     },
     dialogue: [
       { speaker: "Coptcat", text: "The sacred right of personal agency is not a slogan. It is the door. It is the law of the body, the breath, and the future. Walk through it and keep your name." },

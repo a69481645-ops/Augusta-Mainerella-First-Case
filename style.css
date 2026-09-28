@@ -173,19 +173,21 @@ select {
   inset: 0;
   z-index: 2;
   pointer-events: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 3% 0 3%;
 }
 
 .character-sprite {
-  position: absolute;
-  bottom: 0;
-  width: 27%;
-  max-width: 430px;
-  min-width: 220px;
+  height: 100%;
+  max-height: 95%;
   object-fit: contain;
-  filter: drop-shadow(0 0 24px rgba(0, 0, 0, 0.45));
+  filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 20px rgba(122, 231, 255, 0.15));
   transform-origin: bottom center;
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
   opacity: 0;
+  width: 0;
 }
 
 .character-sprite.visible {
@@ -193,18 +195,30 @@ select {
 }
 
 #charLeft {
-  left: 5%;
+  width: 24%;
+  max-width: 380px;
+  transform: scaleX(-1) translateY(2%);
+}
+
+#charLeft.visible {
+  transform: scaleX(-1) translateY(0);
 }
 
 #charCenter {
-  left: 50%;
-  transform: translateX(-50%) scale(1.12);
-  width: 22%;
-  min-width: 180px;
+  width: 32%;
+  max-width: 480px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 #charRight {
-  right: 4%;
+  width: 24%;
+  max-width: 380px;
+  transform: translateY(2%);
+}
+
+#charRight.visible {
+  transform: translateY(0);
 }
 
 .rain-effect {
@@ -421,9 +435,20 @@ input[type="range"]::-moz-range-thumb {
     width: min(94%, 1180px);
   }
 
-  .character-sprite {
+  .character-layer {
+    padding: 0 2% 0 2%;
+  }
+
+  #charLeft {
+    width: 26%;
+  }
+
+  #charCenter {
     width: 30%;
-    min-width: 180px;
+  }
+
+  #charRight {
+    width: 26%;
   }
 }
 
@@ -455,5 +480,21 @@ input[type="range"]::-moz-range-thumb {
   .select-row {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .character-layer {
+    padding: 0 1% 0 1%;
+  }
+
+  #charLeft {
+    width: 28%;
+  }
+
+  #charCenter {
+    width: 32%;
+  }
+
+  #charRight {
+    width: 28%;
   }
 }
