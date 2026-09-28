@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.saves/
+saves/*.json
+.DS_Store
