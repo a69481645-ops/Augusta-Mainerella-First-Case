@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Augusta Mainerella: First Case</title>
+    <meta
+      name="description"
+      content="Augusta Mainerella: First Case — a responsive cyber-noir visual novel single-page application."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="gameContainer" class="game-container">
+      <div id="mainMenu" class="screen active">
+        <div class="menu-scene">
+          <div class="scene-overlay"></div>
+          <img class="menu-logo" src="assets/logo.svg" alt="Augusta Mainerella: First Case logo" />
+
+          <div class="menu-panel">
+            <label for="playerNameInput" class="input-label">PLAYER NAME</label>
+            <input
+              id="playerNameInput"
+              class="name-input"
+              type="text"
+              maxlength="22"
+              placeholder="Coptcat"
+              value=""
+            />
+
+            <div class="menu-actions">
+              <button id="newGameBtn" class="primary action-btn" type="button">New Game</button>
+              <button id="loadGameBtn" class="secondary action-btn" type="button">Load</button>
+              <button id="settingsBtn" class="secondary action-btn" type="button">Settings</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="gameScreen" class="screen">
+        <div id="backgroundLayer" class="background-layer"></div>
+        <div id="characterLayer" class="character-layer" aria-live="polite">
+          <img id="charLeft" class="character-sprite" alt="" />
+          <img id="charCenter" class="character-sprite center-sprite" alt="" />
+          <img id="charRight" class="character-sprite" alt="" />
+        </div>
+
+        <div id="rainEffect" class="rain-effect"></div>
+
+        <div id="dialogueBox" class="dialogue-box">
+          <div id="dialogueName" class="dialogue-name"></div>
+          <div id="dialogueText" class="dialogue-text"></div>
+          <div id="dialogueMeta" class="dialogue-meta">
+            <span class="indicator">Continue</span>
+            <span id="chapterBadge" class="chapter-badge">Chapter 1</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="loadScreen" class="screen">
+        <div class="panel-window">
+          <h2>Load Game</h2>
+          <div id="saveSlots" class="save-slots"></div>
+          <button id="backFromLoadBtn" class="secondary action-btn" type="button">Back</button>
+        </div>
+      </div>
+
+      <div id="settingsScreen" class="screen">
+        <div class="panel-window compact">
+          <h2>Settings</h2>
+          <label class="slider-row" for="masterVolume">
+            <span>Volume</span>
+            <input id="masterVolume" type="range" min="0" max="100" value="75" />
+            <span id="volumeValue">75%</span>
+          </label>
+
+          <label class="select-row" for="textSpeed">
+            <span>Text Speed</span>
+            <select id="textSpeed">
+              <option value="slow">Slow</option>
+              <option value="normal" selected>Normal</option>
+              <option value="fast">Fast</option>
+              <option value="instant">Instant</option>
+            </select>
+          </label>
+
+          <label class="check-row">
+            <input id="ambientToggle" type="checkbox" checked />
+            <span>Ambient audio</span>
+          </label>
+
+          <button id="backFromSettingsBtn" class="secondary action-btn" type="button">Back</button>
+        </div>
+      </div>
+    </div>
+
+    <audio id="ambientAudio" loop preload="auto">
+      <source src="assets/sfx/ambient.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="main.js"></script>
+  </body>
+</html>
