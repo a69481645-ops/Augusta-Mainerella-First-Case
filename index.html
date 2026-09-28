@@ -12,6 +12,7 @@
   </head>
   <body>
     <div id="gameContainer" class="game-container">
+      <!-- MAIN MENU SCREEN -->
       <div id="mainMenu" class="screen active">
         <div class="menu-scene">
           <div class="scene-overlay"></div>
@@ -30,13 +31,13 @@
 
             <div class="menu-actions">
               <button id="newGameBtn" class="primary action-btn" type="button">New Game</button>
-              <button id="loadGameBtn" class="secondary action-btn" type="button">Load</button>
               <button id="settingsBtn" class="secondary action-btn" type="button">Settings</button>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- GAME SCREEN -->
       <div id="gameScreen" class="screen">
         <div id="backgroundLayer" class="background-layer"></div>
         <div id="characterLayer" class="character-layer" aria-live="polite">
@@ -51,20 +52,18 @@
           <div id="dialogueName" class="dialogue-name"></div>
           <div id="dialogueText" class="dialogue-text"></div>
           <div id="dialogueMeta" class="dialogue-meta">
-            <span class="indicator">Continue</span>
-            <span id="chapterBadge" class="chapter-badge">Chapter 1</span>
+            <div class="meta-left">
+              <span id="chapterBadge" class="chapter-badge">Chapter 1</span>
+            </div>
+            <div class="meta-right">
+              <span id="autoAdvanceIndicator" class="auto-indicator hidden">Auto ▶</span>
+              <span class="continue-indicator">Click or Space ▼</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div id="loadScreen" class="screen">
-        <div class="panel-window">
-          <h2>Load Game</h2>
-          <div id="saveSlots" class="save-slots"></div>
-          <button id="backFromLoadBtn" class="secondary action-btn" type="button">Back</button>
-        </div>
-      </div>
-
+      <!-- SETTINGS SCREEN -->
       <div id="settingsScreen" class="screen">
         <div class="panel-window compact">
           <h2>Settings</h2>
@@ -84,12 +83,23 @@
             </select>
           </label>
 
+          <label class="slider-row" for="autoAdvanceDelay">
+            <span>Auto-Advance Delay</span>
+            <input id="autoAdvanceDelay" type="range" min="1" max="8" value="3" />
+            <span id="delayValue">3s</span>
+          </label>
+
           <label class="check-row">
             <input id="ambientToggle" type="checkbox" checked />
             <span>Ambient audio</span>
           </label>
 
-          <button id="backFromSettingsBtn" class="secondary action-btn" type="button">Back</button>
+          <label class="check-row">
+            <input id="autoAdvanceToggle" type="checkbox" />
+            <span>Auto-advance dialogue</span>
+          </label>
+
+          <button id="backFromSettingsBtn" class="secondary action-btn" type="button">Back to Menu</button>
         </div>
       </div>
     </div>

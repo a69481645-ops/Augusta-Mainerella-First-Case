@@ -137,6 +137,7 @@ select {
 
 .action-btn:hover {
   transform: translateY(-1px);
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
 }
 
 .primary {
@@ -156,6 +157,7 @@ select {
 
 #gameScreen {
   background: radial-gradient(circle at top, rgba(54, 76, 117, 0.4), rgba(3, 8, 18, 0.96));
+  cursor: pointer;
 }
 
 .background-layer {
@@ -182,7 +184,7 @@ select {
   object-fit: contain;
   filter: drop-shadow(0 0 24px rgba(0, 0, 0, 0.45));
   transform-origin: bottom center;
-  transition: transform 0.35s ease, opacity 0.2s ease;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
   opacity: 0;
 }
 
@@ -192,7 +194,6 @@ select {
 
 #charLeft {
   left: 5%;
-  transform: translateX(0) scale(1.02);
 }
 
 #charCenter {
@@ -204,7 +205,6 @@ select {
 
 #charRight {
   right: 4%;
-  transform: translateX(0) scale(1.02);
 }
 
 .rain-effect {
@@ -255,6 +255,7 @@ select {
   font-size: clamp(1.05rem, 1.2vw, 1.7rem);
   line-height: 1.6;
   text-shadow: 0 0 12px rgba(122, 231, 255, 0.18);
+  margin: 0.6rem 0 0.7rem 0;
 }
 
 .dialogue-meta {
@@ -268,8 +269,30 @@ select {
   text-transform: uppercase;
 }
 
+.meta-left,
+.meta-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
 .chapter-badge {
   color: #ffb5f3;
+  font-weight: 600;
+}
+
+.auto-indicator {
+  color: #00ff88;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+}
+
+.auto-indicator.hidden {
+  display: none;
+}
+
+.continue-indicator {
+  opacity: 0.75;
 }
 
 .panel-window {
@@ -277,51 +300,26 @@ select {
   inset: 50% auto auto 50%;
   transform: translate(-50%, -50%);
   width: min(80vw, 760px);
-  padding: 1.4rem 1.4rem 1.2rem;
-  background: rgba(7, 11, 17, 0.87);
+  max-height: 85vh;
+  padding: 1.8rem 1.8rem 1.4rem;
+  background: rgba(7, 11, 17, 0.92);
   border: 1px solid rgba(122, 231, 255, 0.35);
-  border-radius: 18px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.45), inset 0 0 20px rgba(122, 231, 255, 0.08);
+  overflow-y: auto;
+  z-index: 10;
 }
 
 .panel-window h2 {
-  margin: 0 0 1rem;
+  margin: 0 0 1.4rem;
   font-size: clamp(2rem, 2.5vw, 3rem);
   letter-spacing: 0.12rem;
   color: #dffaff;
+  text-transform: uppercase;
 }
 
 .compact {
-  width: min(60vw, 540px);
-}
-
-.save-slots {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.save-slot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.9rem 1rem;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(10, 17, 26, 0.78);
-  color: #edf9ff;
-  cursor: pointer;
-}
-
-.save-slot strong {
-  display: block;
-  margin-bottom: 0.2rem;
-}
-
-.save-slot span {
-  opacity: 0.8;
-  font-size: 0.8rem;
+  width: min(70vw, 620px);
 }
 
 .slider-row,
@@ -332,12 +330,45 @@ select {
   justify-content: space-between;
   gap: 1rem;
   width: 100%;
-  margin: 0.85rem 0;
+  margin: 0.95rem 0;
   color: #ecf8ff;
+  font-size: 0.95rem;
 }
 
-.slider-row input[type="range"] {
+.slider-row input[type="range"],
+.select-row select {
   flex: 1;
+  max-width: 200px;
+}
+
+input[type="range"] {
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, rgba(122, 231, 255, 0.4), rgba(255, 0, 255, 0.3));
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7ae7ff, #ff00ff);
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(122, 231, 255, 0.6);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7ae7ff, #ff00ff);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 8px rgba(122, 231, 255, 0.6);
 }
 
 .select-row select {
@@ -346,20 +377,35 @@ select {
   border: 1px solid rgba(122, 231, 255, 0.4);
   border-radius: 10px;
   padding: 0.7rem 0.8rem;
+  cursor: pointer;
+}
+
+.select-row select option {
+  background: #0d1520;
+  color: #ecf8ff;
 }
 
 .check-row {
   justify-content: flex-start;
+  cursor: pointer;
 }
 
-#loadScreen,
+.check-row input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #7ae7ff;
+}
+
 #settingsScreen {
-  background: rgba(2, 6, 13, 0.6);
+  background: rgba(2, 6, 13, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#loadScreen .action-btn,
 #settingsScreen .action-btn {
-  margin-top: 1rem;
+  margin-top: 1.4rem;
 }
 
 @media (max-width: 900px) {
@@ -394,5 +440,20 @@ select {
   .dialogue-meta {
     font-size: 0.64rem;
     letter-spacing: 0.08rem;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .meta-left,
+  .meta-right {
+    width: 100%;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .slider-row,
+  .select-row {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
