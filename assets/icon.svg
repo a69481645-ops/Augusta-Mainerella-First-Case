@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Augusta Mainerella: First Case application icon</title>
+  <desc id="desc">A compact neon cyber-noir AM monogram with cyan crosshair accents.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090d1a"/>
+      <stop offset="0.55" stop-color="#21082d"/>
+      <stop offset="1" stop-color="#050810"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff62e8"/>
+      <stop offset="1" stop-color="#e500a9"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" rx="190" fill="url(#background)"/>
+  <path d="M126 800 512 150 898 800" fill="none" stroke="#ff00c8" stroke-width="28" opacity=".22" filter="url(#glow)"/>
+  <path d="M126 800 512 150 898 800" fill="none" stroke="url(#pink)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M235 620h554" stroke="#00f2ff" stroke-width="20" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M235 620h554" stroke="#00f2ff" stroke-width="10" stroke-linecap="round"/>
+  <text x="512" y="600" text-anchor="middle" fill="#fff4ff" font-family="Arial Black, Arial, sans-serif" font-size="300" font-style="italic" font-weight="900" letter-spacing="-28">AM</text>
+  <circle cx="785" cy="620" r="82" fill="#09121c" stroke="#00f2ff" stroke-width="12"/>
+  <circle cx="785" cy="620" r="18" fill="#00f2ff"/>
+  <path d="M785 500v240M665 620h240" stroke="#00f2ff" stroke-width="8" stroke-linecap="round"/>
+  <text x="512" y="865" text-anchor="middle" fill="#00f2ff" font-family="Arial, sans-serif" font-size="86" font-weight="700" letter-spacing="12">FIRST CASE</text>
+</svg>
